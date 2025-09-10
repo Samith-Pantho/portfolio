@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies - Samith Binda Pantho</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="container">
+        <div class="nav">
+            <div class="nav-brand">
+                <img src="profilePhoto.png" alt="Samith Pantho" class="profile-image">
+                <div class="brand-name">Samith Binda Pantho</div>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hobbies Section -->
+    <section class="hobbies">
+        <div class="container">
+            <div class="hobby-grid">
+
+                <div class="hobby-item">
+                    <div class="hobby-header">
+                        <i class="fas fa-book-open"></i>
+                        <h3>Reading Books</h3>
+                    </div>
+                    <div class="hobby-content">
+                        <div class="book-genres">
+                            <div class="genre-tag">
+                                <i class="fas fa-microscope"></i>
+                                <span>Science Fiction</span>
+                            </div>
+                            <div class="genre-tag">
+                                <i class="fas fa-skull"></i>
+                                <span>Thriller</span>
+                            </div>
+                            <div class="genre-tag">
+                                <i class="fas fa-mountain"></i>
+                                <span>Adventure</span>
+                            </div>
+                            <div class="genre-tag">
+                                <i class="fas fa-brain"></i>
+                                <span>Psychological</span>
+                            </div>
+                        </div>
+                        
+                        <div class="book-lists">
+                            <div class="book-list">
+                                <h4>Bengali</h4>
+                                <ul>
+                                    <li><i class="fas fa-book"></i> <span class="bengali">পথের পাঁচালী</span> - Bibhutibhushan Bandyopadhyay</li>
+                                    <li><i class="fas fa-book"></i> <span class="bengali">সত্যান্বেষী</span> - Sunil Gangopadhyay</li>
+                                    <li><i class="fas fa-book"></i> <span class="bengali">হিমু</span> series - Humayun Ahmed</li>
+                                    <li><i class="fas fa-book"></i> <span class="bengali">মিসির আলি</span> series - Humayun Ahmed</li>
+                                    <li><i class="fas fa-book"></i> <span class="bengali">মাসুদ রানা</span> series - Kazi anwar hossain</li>
+                                    <li><i class="fas fa-book"></i> <span class="bengali">সায়েন্স ফিকশন</span> series - Muhammed Zafar Iqbal</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="book-list">
+                                <h4>International</h4>
+                                <ul>
+                                    <li><i class="fas fa-book"></i> Harry Potter series - J.K. Rowling</li>
+                                    <li><i class="fas fa-book"></i> Twilight saga - Stephenie Meyer</li>
+                                    <li><i class="fas fa-book"></i> The Da Vinci Code - Dan Brown</li>
+                                    <li><i class="fas fa-book"></i> Angels & Demons - Dan Brown</li>
+                                    <li><i class="fas fa-book"></i> The Lost Symbol - Dan Brown</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hobby-item">
+                    <div class="hobby-header">
+                        <i class="fas fa-mountain"></i>
+                        <h3>Outdoor Exploration</h3>
+                    </div>
+                    <div class="gallery-container">
+                        <div class="gallery-row row-1">
+                            <div class="gallery-item">
+                                <img src="https://i.postimg.cc/C16PnXkN/1.avif" alt="Pori Beach">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://i.postimg.cc/NF3dpXN2/2.jpg" alt="Stairs">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://i.postimg.cc/pTpNSDBs/3.jpg" alt="Porvo">
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-row row-2">
+                            <div class="gallery-item">
+                                <img src="https://i.postimg.cc/L8Tr6yCy/4.jpg" alt="Winter Road">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://i.postimg.cc/QNTwWNYK/5.jpg" alt="Winter Sunset">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://i.postimg.cc/hGYZfN90/6.jpg" alt="After snowfall">
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-row row-3">
+                            <div class="gallery-item">
+                                <img src="https://i.postimg.cc/BnYMVRwG/7.jpg" alt="Helsinki road">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://i.postimg.cc/029n29Ts/8.jpg" alt="Autumn">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="https://i.postimg.cc/zv8CBkPj/9.jpg" alt="Ferrywheeler">
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Contact Section -->
+    <footer id="contact">
+        <div class="container">
+            <h3>Contact Me</h3>
+            <p>Email: samithbindapantho@hotmail.com</p>
+            <p>Phone: +358417434881</p>
+            <p>Location: Tampere, Pirkanmaa, Finland</p>
+            <p>© Samith Binda Pantho 2025</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

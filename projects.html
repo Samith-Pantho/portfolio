@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Samith Binda Pantho</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="container">
+        <div class="nav">
+            <div class="nav-brand">
+                <img src="profilePhoto.png" alt="Samith Pantho" class="profile-image">
+                <div class="brand-name">Samith Binda Pantho</div>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Projects Header -->
+    <section id="projectList">
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="enterprise">Enterprise</button>
+            <button class="filter-btn" data-filter="self">Self Projects</button>
+        </div>
+
+        <!-- Projects Section -->
+        <section id="projects" class="project-grid">
+            <!-- Projects will be loaded by JavaScript -->
+        </section>
+    </section>
+
+    <section id="project-detail" class="project-detail" hidden>
+        <!-- Project details will be loaded by JavaScript -->
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact">
+        <div class="container">
+            <h3>Contact Me</h3>
+            <p>Email: samithbindapantho@hotmail.com</p>
+            <p>Phone: +358417434881</p>
+            <p>Location: Tampere, Pirkanmaa, Finland</p>
+            <p>© Samith Binda Pantho 2025</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
