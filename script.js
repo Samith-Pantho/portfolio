@@ -601,18 +601,28 @@ function toggleSection(id, toggleType) {
       }
 }
 
-// Mobile menu toggle
-const menuBtn = document.querySelector('.mobile-menu-btn');
+// Mobile menu functionality
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const navLinks = document.querySelector('.nav-links');
+const backdrop = document.querySelector('.mobile-menu-backdrop');
 
-menuBtn.addEventListener('click', () => {
-navLinks.classList.toggle('active');
-
-if (navLinks.classList.contains('active')) {
-    menuBtn.innerHTML = '<i class="fas fa-times"></i>';
-} else {
-    menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+function toggleMenu() {
+    mobileMenuBtn.classList.toggle('close');
+    navLinks.classList.toggle('active');
+    backdrop.classList.toggle('active');
+    document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
 }
+
+mobileMenuBtn.addEventListener('click', toggleMenu);
+backdrop.addEventListener('click', toggleMenu);
+
+// Close menu when clicking on links
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+            toggleMenu();
+        }
+    });
 });
     
 
